@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
+    <title>DongHa</title> 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://use.fontawesome.com/f02a3b8129.js"></script>  
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+</head>
+<body>
+    <header>
+        <span id="homeMenu" >
+            <i class="fa fa-home fa-2x reverseHand" aria-hidden="true"></i>
+        </span>
+
+        <ul>
+            <li folder="A" ><i class="fa fa-sticky-note-o"     aria-hidden="true"></i><span>Develop</span></li>
+            <li folder="B" ><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>B</span></li>
+            <li folder="C" ><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>C</span></li>
+        </ul>
+        
+        <span id="menuBtn" >
+            <i class="fa fa-bars fa-2x hand" aria-hidden="true"></i>
+        </span>
+    </header>
+    <nav class="hand" data-status="standby" >
+        <ul data-role="listview" >
+            <li data-role="collapsible" 
+                data-iconpos="left" 
+                data-collapsed-icon="carat-d"
+                data-expanded-icon="carat-u"
+                data-inset="false"
+                folder="A" >
+                <legend>Developer</legend>
+                <ul data-role="listview" >
+                    <li><a href="#js"    >JAVASCRIPT</a></li>
+                    <li><a href="#java"  >JAVA</a></li>
+                    <li><a href="#spring">SPRING</a></li>
+                    <li><a href="#db"    >DB</a></li>
+                </ul>
+            </li>
+            <li data-role="collapsible"  
+                data-inset="false"
+                folder="B" >
+                <legend>B</legend>
+            </li>
+            <li data-role="collapsible"  
+                data-inset="false"
+                folder="C" >
+                <legend>C</legend>
+            </li>
+        </ul>
+    </nav>
+    <section></section> 
+    <footer></footer>
+
+    <div id="mask" ></div>    
+    <script src="common/common.js" ></script> 
+    <script src="index.js" ></script> 
+    <!-- <script src="INIT/init.js" ></script> -->
+</body>
+</html>

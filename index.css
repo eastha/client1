@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* All */
+html,
+html * {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : Gotham, Helvetica Neue, Helvetica, Arial, sans-sherif; 
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hand{
+    float: right;
+}
+
+.reverseHand{
+    float: left;
+}
+
+/* 
+JS로 처리해야 할 리스트 
+
+nav += 198px
+*/
+
+
+/* Header */
+header{
+    height: 52px;
+    padding: 10px;
+    background-color: #1976D2;
+    color: #EFF6FC;
+}
+ 
+header ul{
+    display: none;
+} 
+
+header span{
+    cursor: pointer;
+}
+
+/* Navi */
+nav{
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+nav .ui-listview>.ui-li-static{
+    padding: 0;
+}
+
+/* hand에 따라 변경 필요 */
+nav{
+    position: absolute;
+    right: -198px;
+    z-index: 200;
+}
+
+section{
+    color: black;
+}    
+
+#mask{
+    position: absolute;
+    left: 0;
+    top: 52px;
+    z-index: 100;
+    background-color: #929191;
+    opacity: 0.2;
+    display: none;    
+}
+
+/* Tablet */
+@media(min-width:768px){   
+}
+
+/* Dasktop */
+@media(min-width:1024px){ 
+}
+ 
